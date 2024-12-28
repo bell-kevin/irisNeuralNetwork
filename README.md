@@ -1,6 +1,23 @@
 <a name="readme-top"></a>
 
 # 
+1. Load the Iris dataset (from sklearn).
+
+2. Split it into training and test sets.
+
+3. Build a 3-layer neural network:
+
+    - Input layer: 4 features
+      
+    - Hidden layer 1: 8 neurons (ReLU activation)
+   
+    - Hidden layer 2: 8 neurons (ReLU activation)
+      
+    - Output layer: 3 neurons (softmax activation)
+
+4. Train the network from scratch using gradient descent.
+
+5. Print the training loss and test accuracy.
 
 --------------------------------------------------------------------------------------------------------------------------
 == We're Using GitHub Under Protest ==
