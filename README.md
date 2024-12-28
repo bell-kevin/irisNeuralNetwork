@@ -19,6 +19,31 @@
 
 5. Print the training loss and test accuracy.
 
+
+How This Code Works
+
+1. Data Loading: We use the Iris dataset from sklearn. It has 150 samples, each with 4 features, and 3 class labels.
+
+2. One-Hot Encoding: Convert class labels (0,1,2) into one-hot vectors (e.g., class 1 → [0,1,0]).
+   
+3. Train/Test Split: We split the data into 80% training and 20% test.
+
+4. Neural Network Architecture:
+   
+        - Layer 1: z1 = X W1 + b1, then ReLU → a1.
+   
+        - Layer 2: z2 = a1 W2 + b2, then ReLU → a2.
+   
+        - Output Layer: z3 = a2 W3 + b3, then softmax → a3.
+   
+5. Loss: We use cross-entropy, a common choice for multi-class classification.
+
+6. Backward Pass: Uses the chain rule to compute gradients w.r.t. each weight matrix and bias vector.
+   
+7. Weight Update: We do a simple gradient descent step on each parameter.
+
+8. Evaluation: We measure test set accuracy by comparing the predicted class index with the true class index.
+
 --------------------------------------------------------------------------------------------------------------------------
 == We're Using GitHub Under Protest ==
 
